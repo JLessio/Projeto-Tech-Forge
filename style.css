@@ -16,7 +16,7 @@ body {
     justify-content: flex-end;
     align-items: center;
     padding: 10px;
-    
+    background: transparent;
 }
 
 .navbar-nav a {
