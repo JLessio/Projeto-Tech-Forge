@@ -12,7 +12,7 @@ html {
 body {
     min-height: 100vh;
     background-color: #2a1e31;
-    background-image: url(./img/bg-3.png) no-repeat;
+    background-image: url(./37175.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     overflow-x: hidden;
@@ -64,7 +64,7 @@ body {
     object-fit: cover;  
 }
 
-.main-text {
+/* .main-text {
     position: absolute;
     left: 50%;
     top: 40%;
@@ -73,20 +73,109 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+} */
 
-.main-text h1 {
+.but-init {
     font-family: 'More Sugar';
-    font-size: 64px;
-    color: white;
+    background-color: #f78f00;
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, 180%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    padding: 30px;
+}
+
+.tittle {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -110%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'More Sugar';
+    font-size: 110px;
+    color: #403e3f;
     text-transform: uppercase;
     font-weight: 300;
 }
 
-.main-text h4 {
+.sub-tittle {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -80%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-family: 'Orbitron';
-    font-size: 24px;
-    color: #fe6e02;
-    text-transform: uppercase;
+    font-size: 50px;
+    color: #fff;
+    /* text-transform: uppercase; */
     font-weight: 300;
+}
+
+#about {
+    width: 100%;
+    display: flex;
+    margin: 0px auto;
+    grid-gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-bg {
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.about-text {
+    opacity: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    box-shadow: 0 0 20px white;
+}
+
+.about-text h2 {
+    font-family: 'More Sugar';
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+.about-text h4 {
+    font-family: 'Orbitron';
+    font-size: 15px;
+}
+
+.gallery-bar {
+    justify-content: center;
+    gap: 10px;
+    display: flex;
+    object-fit: cover;
+}
+
+.gallery-bar img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px;
 }
