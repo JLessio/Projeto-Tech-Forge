@@ -1,0 +1,23 @@
+body {
+    background-color: #403e3f;
+}
+
+.header {
+    width: 100%;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.tittle {
+    font-size: 50px;
+    color: white;
+    font-family: 'More Sugar';
+}
+
+.sub-t {
+    font-size: 25px;
+    color: white;
+    font-family: 'Orbitron';
+}
