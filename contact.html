@@ -17,12 +17,44 @@
               <label for="email">E-mail:</label>
               <input type="email" id="email" name="email" required>
         
-              <label for="mensagem">Mensagem:</label>
-              <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+              <label for="mensagem">Telefone:</label>
+              <input type="text" id="telefone" name="telefone" required>
         
               <button type="submit">Enviar</button>
             </form>
           </div>
     </section>
+    <script>
+      document.getElementById('botao').onclick = function () {
+        let nome = document.getElementById('nome').value;
+        let email = document.getElementById('email').value;
+        let telefone = document.getElementById('telefone').value;
+
+        
+
+        if (nome == "" && email == "" && telefone == "") {
+          alert("Por favor, preencha todos os campos abaixos.");
+        } else {
+          if (nome == "") {
+            alert("Informe o nome.");
+          }
+          if (email == "") {
+            alert("Informe o email.")
+          } else {
+            function ValidarEmail(email) {
+              var emailPattern = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
+              return emailPattern.test(email);
+            }
+            console.log('teste');
+            console.log(ValidarEmail('teste@teste@teste.com'));
+            console.log(ValidarEmail('teste@teste.com'));
+            console.log(ValidarEmail('teste@.teste.com.br'));
+          }
+          if (telefone == "") {
+            alert("Informe o telefone");
+          }
+        }
+      }
+    </script>
 </body>
 </html>
