@@ -1,5 +1,6 @@
 body {
     background-color: #403e3f;
+    box-sizing: border-box;
 }
 
 .header {
@@ -20,4 +21,17 @@ body {
     font-size: 25px;
     color: white;
     font-family: 'Orbitron';
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+iframe {
+    width: 60%;
+    height: 600px;
+    border: none;
+    
 }
